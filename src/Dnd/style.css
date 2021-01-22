@@ -1,0 +1,23 @@
+.list-container {
+  margin: 20px;
+}
+
+.item {
+  position: relative;
+  padding: 8px 8px 8px 30px;
+  margin: 4px 0;
+  border: 1px dashed #ddd;
+  font-size: 14px;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-color: black;
+  cursor: move;
+}
